@@ -1,0 +1,431 @@
+/* ===== OUR UNITS SPECIFIC STYLES ===== */
+/* Professional button styling and enhanced unit card presentation */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap');
+
+/* ===== UNIT BUTTONS STYLING ===== */
+/* Professional "Learn More" buttons for research units */
+.unit_learn_more_btn {
+  background-color: #0355cc;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  min-width: 120px;
+  border: none;
+  outline: none;
+}
+
+.unit_learn_more_btn:hover {
+  background-color: #ff8a1d;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.unit_learn_more_btn:focus {
+  outline: 2px solid #0355cc;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(3, 85, 204, 0.1);
+}
+
+.unit_learn_more_btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Special styling for Kaayaka button (green theme) */
+.unit_kaayaka_btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: 'Merriweather Sans', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  min-width: 120px;
+}
+
+.unit_kaayaka_btn:hover {
+  background-color: #218838;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.unit_kaayaka_btn:focus {
+  outline: 2px solid #28a745;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+/* ===== RESEARCH UNITS SECTION ENHANCEMENTS ===== */
+/* Enhanced service section boxes */
+.service_section .box {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.service_section .box:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Image box styling */
+.service_section .box .img-box {
+  height: 220px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.service_section .box .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service_section .box:hover .img-box img {
+  transform: scale(1.05);
+}
+
+/* Detail box styling */
+.service_section .box .detail-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service_section .box .detail-box h5 {
+  color: #0355cc;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service_section .box .detail-box p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+/* ===== KAAYAKA INITIATIVES STYLING ===== */
+.kaayaka_section {
+  background: #ffffff;
+  padding: 80px 0;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.kaayaka_section h2 {
+  color: #0355cc;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.kaayaka_section .heading_container p {
+  color: #444;
+  font-size: 16px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.kaayaka_card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 35px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.kaayaka_card:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+}
+
+.kaayaka_card h4 {
+  color: #0355cc;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kaayaka_card p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.kaayaka_features {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+  flex: 1;
+}
+
+.kaayaka_features li {
+  padding: 10px 0;
+  position: relative;
+  padding-left: 25px;
+  color: #444;
+  font-size: 14px;
+  line-height: 1.5;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.kaayaka_features li:last-child {
+  border-bottom: none;
+}
+
+.kaayaka_features li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0355cc;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.kaayaka_btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #0355cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: 2px solid #0355cc;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.kaayaka_btn:hover {
+  background: transparent;
+  color: #0355cc;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.kaayaka_section .foundation_note {
+  text-align: center;
+  margin-top: 50px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #0355cc;
+}
+
+.kaayaka_section .foundation_note h4 {
+  color: #0355cc;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.kaayaka_section .foundation_note p {
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ===== DONATION MODAL ENHANCEMENTS ===== */
+.donation_section .detail-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.donation_section .detail-box h2 {
+  margin-bottom: 1rem;
+  color: #0355cc;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.donation_section .detail-box p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.donation_section .detail-box button {
+  margin-top: 1rem;
+}
+
+/* Form styling */
+#donationForm .form-control {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#donationForm .form-control:focus {
+  border-color: #0355cc;
+  box-shadow: 0 0 0 0.2rem rgba(3, 85, 204, 0.25);
+}
+
+#donationForm .form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Message styling */
+.message {
+  display: none;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .service_section .box {
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .service_section .box .img-box {
+    height: 180px;
+  }
+
+  .kaayaka_card {
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+
+  .unit_learn_more_btn,
+  .unit_kaayaka_btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .kaayaka_section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .service_section .box .img-box {
+    height: 160px;
+  }
+
+  .kaayaka_card {
+    padding: 20px;
+  }
+
+  .kaayaka_section .foundation_note {
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .donation_section .detail-box {
+    padding: 15px;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+.unit_learn_more_btn:focus,
+.unit_kaayaka_btn:focus,
+.kaayaka_btn:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  .unit_learn_more_btn,
+  .unit_kaayaka_btn,
+  .kaayaka_btn {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .unit_learn_more_btn,
+  .unit_kaayaka_btn,
+  .kaayaka_btn,
+  .service_section .box,
+  .kaayaka_card {
+    transition: none;
+  }
+
+  .service_section .box:hover,
+  .kaayaka_card:hover {
+    transform: none;
+  }
+
+  .service_section .box:hover .img-box img {
+    transform: none;
+  }
+}

@@ -1,0 +1,254 @@
+/* ===== ADVISORY BOARD SPECIFIC STYLES ===== */
+/* Enhanced styling with "Voices of Insight and Innovation" heading and reduced about section image */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap');
+
+/* ===== ABOUT SECTION ENHANCEMENTS ===== */
+/* Enhanced About Section Styling - same as index.html */
+.about_section .detail-box h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0355cc;
+  margin-bottom: 25px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Reduced image size for about section only */
+.about_section .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_section .img-box img {
+  width: 75%; /* Reduced from 100% to 75% */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== ADVISORY BOARD SECTION STYLING ===== */
+/* Advisory Board Card Styling - Medium 400x400 */
+.advisory_board_section .box {
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 400px;
+  min-height: 400px;
+}
+
+.advisory_board_section .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Advisor image container sizing */
+.advisor_image_container {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+  position: relative;
+  border: 3px solid #0355cc;
+}
+
+.advisor_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.advisor_placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #0355cc;
+}
+
+/* Advisor info section styling */
+.advisor_info_section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.advisor_name {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0355cc;
+  margin-bottom: 10px;
+}
+
+.advisor_position {
+  font-size: 0.9rem;
+  color: #ff8a1d;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.advisor_expertise {
+  font-style: italic;
+  color: #666;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.advisor_bio_preview {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex: 1;
+  text-align: justify;
+}
+
+.view_details_btn {
+  background-color: #0355cc;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  margin-top: auto;
+}
+
+.view_details_btn:hover {
+  background-color: #ff8a1d;
+  transform: translateY(-2px);
+}
+
+/* ===== MODAL STYLING ===== */
+/* Modal styling for advisor bios */
+.bio_modal .modal-content {
+  border-radius: 10px;
+}
+
+.bio_modal .modal-header {
+  background-color: #0355cc;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.bio_modal .modal-body {
+  padding: 30px;
+}
+
+.bio_section {
+  margin-bottom: 25px;
+}
+
+.bio_section h5 {
+  color: #0355cc;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bio_section p {
+  line-height: 1.6;
+  text-align: justify;
+  color: #444;
+}
+
+.highlight_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.highlight_item {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border-left: 3px solid #0355cc;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ===== DONATION SECTION ===== */
+/* Message styling */
+.message {
+  display: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .advisory_board_section .box {
+    max-width: 350px;
+    min-height: 350px;
+    margin: 15px auto;
+  }
+
+  .advisor_image_container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .advisor_name {
+    font-size: 1.2rem;
+  }
+
+  .advisor_bio_preview {
+    font-size: 0.85rem;
+  }
+
+  .about_section .img-box img {
+    width: 85%; /* Slightly larger on mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .advisory_board_section .box {
+    max-width: 300px;
+    min-height: 320px;
+    padding: 15px;
+  }
+
+  .advisor_image_container {
+    width: 80px;
+    height: 80px;
+  }
+
+  .highlight_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about_section .img-box img {
+    width: 90%; /* Even more prominent on small screens */
+  }
+}

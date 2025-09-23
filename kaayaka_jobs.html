@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="Kaayaka Jobs, IT Jobs, Tech Jobs, AI Jobs, Job Portal, Basava Philosophy" />
+    <meta name="description" content="Kaayaka Jobs - A job portal and networking platform for IT, AI, Tech, and Professional jobs across the USA, part of Basava Philosophy Research Foundation." />
+    <meta name="author" content="Basava Philosophy Research Foundation" />
+
+    <title>Kaayaka Jobs - BPRF</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/BPRF_img.png" type="image/x-icon" />
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <style>
+      /* Custom styles for img-box */
+      .img-box img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .message {
+        display: none;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        border-radius: 5px;
+        z-index: 1000;
+      }
+
+      /* Page Header Section */
+      .page_header_section {
+        position: relative;
+        background-color: #d1e3ff;
+        padding: 80px 0 60px;
+        text-align: center;
+      }
+
+      .page_header_content h1 {
+        font-weight: bold;
+        margin-bottom: 25px;
+        color: #0355cc;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+      }
+
+      .page_header_content p {
+        color: #444;
+        font-size: 15px;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      /* Main Content Section */
+      .main_content_section {
+        padding: 120px 0;
+        background: #ffffff;
+      }
+
+      .content_card {
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+        padding: 40px;
+        margin-bottom: 30px;
+      }
+
+      .content_card h3 {
+        color: #0355cc;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+      }
+
+      .content_card p {
+        color: #444;
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+
+      .features_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .feature_item {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 5px;
+        border-left: 4px solid #0355cc;
+        text-align: center;
+        transition: all 0.3s;
+      }
+
+      .feature_item:hover {
+        background-color: #ff8a1d;
+        color: white;
+        transform: translateY(-5px);
+      }
+
+      .feature_item .fa {
+        font-size: 2.5rem;
+        color: #0355cc;
+        margin-bottom: 15px;
+      }
+
+      .feature_item:hover .fa {
+        color: white;
+      }
+
+      .feature_item h5 {
+        color: #0355cc;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+
+      .feature_item:hover h5 {
+        color: white;
+      }
+
+      .feature_item p {
+        color: #444;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+        text-align: center;
+      }
+
+      .feature_item:hover p {
+        color: white;
+      }
+
+      .highlight_box {
+        background: #fff3cd;
+        border: 1px solid #ffeaa7;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 30px 0;
+        border-left: 4px solid #ff8a1d;
+      }
+
+      .highlight_box .fa {
+        color: #ff8a1d;
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+
+      .highlight_box p {
+        margin: 0;
+        font-weight: 600;
+        color: #856404;
+      }
+
+      .guidelines_section {
+        background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+        padding: 30px;
+        border-radius: 5px;
+        margin: 30px 0;
+      }
+
+      .guidelines_section h4 {
+        color: #0355cc;
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .guideline_item {
+        color: #444;
+        font-size: 14px;
+        padding: 8px 0;
+        position: relative;
+        padding-left: 25px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+      }
+
+      .guideline_item:before {
+        content: "✓";
+        color: #0355cc;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        top: 8px;
+        font-size: 16px;
+      }
+
+      .stats_section {
+        background: #0355cc;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        margin: 50px 0;
+        border-radius: 5px;
+      }
+
+      .stats_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .stat_item {
+        padding: 20px;
+      }
+
+      .stat_number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #ff8a1d;
+        margin-bottom: 10px;
+        font-family: 'Merriweather Sans', sans-serif;
+      }
+
+      .stat_label {
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header_section.html (EXACT FROM INDEX) -->
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/new_logo.png" alt="Logo" style="height: 80px; margin-right: 0px;margin-left: 20px;">
+              <span class="d-none d-sm-inline">Basava Philosophy Research Foundation</span>
+              <span class="d-inline d-sm-none">BPRF</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="our_units.html">Our Units</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Boards
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="executive_board.html"
+                      >
+                        Executive Board
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="under_construction.html"
+                      >
+                        Advisory Board
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="volunteers.html">Volunteers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Header Section -->
+    <section class="page_header_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page_header_content">
+              <h1>Kaayaka Jobs</h1>
+              <p>Connecting Tech Professionals with Opportunities Across the USA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="main_content_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-md-12 mx-auto">
+
+            <!-- About Section -->
+            <div class="content_card">
+              <h3>About Kaayaka Jobs</h3>
+              <p><strong>Kaayaka Jobs</strong> is an initiative of <strong>Basava Philosophy Research Foundation</strong>, California registered non-profit organization. This platform serves as a comprehensive forum for both job seekers and employers in the technology sector.</p>
+
+              <p>Our community is designed for those who seek jobs and also for those who would like to hire for their companies or refer others. It operates as a self-help and mutual support group, fostering connections between talented professionals and growing companies.</p>
+
+              <div class="highlight_box">
+                <p><i class="fa fa-handshake-o"></i> <strong>Mission:</strong> To bridge the gap between talented tech professionals and innovative companies through community-driven networking and mutual support.</p>
+              </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="content_card">
+              <h3>Platform Features</h3>
+
+              <div class="features_grid">
+                <div class="feature_item">
+                  <i class="fa fa-search"></i>
+                  <h5>Job Search</h5>
+                  <p>Find opportunities in IT, AI, Tech, and other professional fields across the USA</p>
+                </div>
+
+                <div class="feature_item">
+                  <i class="fa fa-bullhorn"></i>
+                  <h5>Job Posting</h5>
+                  <p>Companies and professionals can post job requirements and hiring needs</p>
+                </div>
+
+                <div class="feature_item">
+                  <i class="fa fa-users"></i>
+                  <h5>Referral Network</h5>
+                  <p>Job seekers can ask for referrals from community members</p>
+                </div>
+
+                <div class="feature_item">
+                  <i class="fa fa-building"></i>
+                  <h5>Company Connections</h5>
+                  <p>Direct connections between employers and potential candidates</p>
+                </div>
+
+                <div class="feature_item">
+                  <i class="fa fa-graduation-cap"></i>
+                  <h5>Skill Development</h5>
+                  <p>Resources and connections for professional growth and learning</p>
+                </div>
+
+                <div class="feature_item">
+                  <i class="fa fa-comments"></i>
+                  <h5>Community Support</h5>
+                  <p>Peer-to-peer assistance and career guidance from experienced professionals</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Job Categories Section -->
+            <div class="content_card">
+              <h3>Job Categories</h3>
+
+              <div class="guidelines_section">
+                <h4>We Focus On</h4>
+
+                <div class="guideline_item">Information Technology (IT) positions</div>
+                <div class="guideline_item">Artificial Intelligence (AI) and Machine Learning roles</div>
+                <div class="guideline_item">Software Development and Engineering</div>
+                <div class="guideline_item">Data Science and Analytics</div>
+                <div class="guideline_item">Cloud Computing and DevOps</div>
+                <div class="guideline_item">Cybersecurity positions</div>
+                <div class="guideline_item">Tech Leadership and Management roles</div>
+                <div class="guideline_item">Other Professional and Technical positions</div>
+              </div>
+
+              <div class="highlight_box">
+                <p><i class="fa fa-globe"></i> <strong>Inclusive Community:</strong> This group is non-racial, non-language specific, non-geographical region specific and welcomes all people across USA who need IT, AI, Tech or Professional jobs.</p>
+              </div>
+            </div>
+
+            <!-- Kaayaka Community Description -->
+            <div class="content_card">
+              <h3>Kaayaka Community</h3>
+
+              <p><strong>Hi everyone!</strong> This community is an offshoot of <strong>Basava Philosophy Research Foundation</strong>, registered non-profit organization of California state. This is a managed group designed to help job seekers and professionals connect with hiring tech workers, employers, and industry professionals.</p>
+
+              <p>Currently we are focusing on IT jobs and job seekers can ask for referrals while professionals can post requirements if they are hiring from their companies. Our platform facilitates meaningful connections that benefit both job seekers and employers.</p>
+
+              <div class="highlight_box">
+                <p><i class="fa fa-flag-usa"></i> <strong>USA Focus:</strong> This group is specifically designed for USA residents and focuses on opportunities within the United States job market.</p>
+              </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="stats_section">
+              <h3 style="color: white; font-family: 'Merriweather Sans', sans-serif; text-transform: uppercase; margin-bottom: 20px;">Community Impact</h3>
+              <p style="color: #e0e7ff; margin-bottom: 0;">Connecting professionals with opportunities across the tech industry</p>
+
+              <div class="stats_grid">
+                <div class="stat_item">
+                  <div class="stat_number">500+</div>
+                  <div class="stat_label">Active Members</div>
+                </div>
+                <div class="stat_item">
+                  <div class="stat_number">100+</div>
+                  <div class="stat_label">Jobs Posted Monthly</div>
+                </div>
+                <div class="stat_item">
+                  <div class="stat_number">75%</div>
+                  <div class="stat_label">Success Rate</div>
+                </div>
+                <div class="stat_item">
+                  <div class="stat_number">50+</div>
+                  <div class="stat_label">Partner Companies</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="content_card">
+              <h3>How Kaayaka Jobs Works</h3>
+
+              <div class="guidelines_section">
+                <h4>For Job Seekers</h4>
+
+                <div class="guideline_item">Join our community and create your professional profile</div>
+                <div class="guideline_item">Browse job postings from verified employers</div>
+                <div class="guideline_item">Ask for referrals from community members</div>
+                <div class="guideline_item">Connect directly with hiring managers and recruiters</div>
+                <div class="guideline_item">Participate in career development discussions</div>
+              </div>
+
+              <div class="guidelines_section">
+                <h4>For Employers</h4>
+
+                <div class="guideline_item">Post job requirements and hiring needs</div>
+                <div class="guideline_item">Access a pool of pre-screened tech professionals</div>
+                <div class="guideline_item">Connect with referral partners within the community</div>
+                <div class="guideline_item">Participate in talent networking events</div>
+                <div class="guideline_item">Build long-term relationships with candidates</div>
+              </div>
+            </div>
+
+            <!-- Join Section -->
+            <div class="content_card" style="text-align: center;">
+              <h3>Ready to Advance Your Tech Career?</h3>
+              <p>Join thousands of tech professionals who have found their dream jobs through our community-driven platform. Whether you're seeking new opportunities or looking to hire top talent, Kaayaka Jobs is your gateway to success.</p>
+
+              <div style="margin-top: 30px;">
+                <a href="contact.html" class="btn" style="background-color: #0355cc; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; text-transform: uppercase; font-family: 'Merriweather Sans', sans-serif; margin-right: 15px;">
+                  Join as Job Seeker
+                </a>
+                <a href="contact.html" class="btn" style="background-color: #ff8a1d; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; text-transform: uppercase; font-family: 'Merriweather Sans', sans-serif;">
+                  Post Jobs
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- info section (EXACT FROM INDEX) -->
+    <section class="info_section">
+      <div class="container">
+        <h4>Get In Touch</h4>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="info_items">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </div>
+                      <p>416 Mystic Ln, Pittsburg, CA, USA</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </div>
+                      <p>+1 415 233 2408</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
+                      <p>info@basavaphilosophy.com</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-box">
+        <h4>Follow Us</h4>
+        <div class="box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/basavaphil70735">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCUJruMbSZHJhyqOXCf0JQhA">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/basavaphilosophy/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+        <h6>EIN # 33-4931428</h6>
+      </div>
+    </section>
+    <!-- end info section -->
+
+    <!-- footer section (EXACT FROM INDEX) -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayDateYear"></span> | BasavaPhilosophy All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+
+    <script>
+      // Set current year in copyright
+      document.getElementById('displayDateYear').innerHTML = new Date().getFullYear();
+
+      function showMessage(event) {
+        event.preventDefault();
+        alert("This page is under construction.");
+      }
+    </script>
+  </body>
+</html>

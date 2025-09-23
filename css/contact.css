@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap');
+
+/* ===== CONTACT PAGE SPECIFIC STYLES ===== */
+
+/* Base styling (matching index.html exactly) */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #040000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Layout padding (matching index.html) */
+.layout_padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Heading container (matching index.html) */
+.heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.heading_container h2 {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #0355cc;
+}
+
+.heading_container p {
+  margin-bottom: 0;
+  color: #444;
+}
+
+.heading_container.heading_center {
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== ABOUT SECTION ENHANCEMENTS ===== */
+.about_section .detail-box h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0355cc;
+  margin-bottom: 25px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* ===== CONTACT FORM SECTION ===== */
+.contact_form_section {
+  padding: 120px 0;
+  background-color: #f8f9fa;
+}
+
+.contact_form_section .heading_container {
+  margin-bottom: 50px;
+}
+
+.contact_form_section .heading_container h2 {
+  color: #0355cc;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact_form_section .heading_container p {
+  color: #444;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.form_container {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact_form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact_form .form-label {
+  font-weight: 600;
+  color: #040000;
+  margin-bottom: 8px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact_form .form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 14px;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+.contact_form .form-control:focus {
+  border-color: #0355cc;
+  box-shadow: 0 0 0 0.2rem rgba(3, 85, 204, 0.25);
+  outline: none;
+}
+
+.contact_form .form-control.is-valid {
+  border-color: #28a745;
+}
+
+.contact_form .form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.contact_form textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ===== ENHANCED CONTACT SUBMIT BUTTON ===== */
+.contact_submit_btn {
+  background-color: #ff8a1d;
+  border: 2px solid #ff8a1d;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: 'Merriweather Sans', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.contact_submit_btn:hover {
+  background-color: transparent;
+  color: #ff8a1d;
+  border-color: #ff8a1d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 138, 29, 0.3);
+}
+
+.contact_submit_btn:focus {
+  outline: 2px solid #ff8a1d;
+  outline-offset: 2px;
+}
+
+.contact_submit_btn:active {
+  transform: translateY(0);
+}
+
+.contact_submit_btn:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.contact_submit_btn i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.contact_submit_btn:hover i {
+  transform: translateX(3px);
+}
+
+/* Loading state for submit button */
+.contact_submit_btn.loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.contact_submit_btn.loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Form validation messages */
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #dc3545;
+}
+
+.valid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #28a745;
+}
+
+/* Success message styling */
+.message {
+  display: none;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* ===== CONTACT LINKS STYLING ===== */
+a[href^="tel:"], a[href^="mailto:"] {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a[href^="tel:"]:hover, a[href^="mailto:"]:hover {
+  color: #0355cc;
+}
+
+/* ===== DONATION SECTION CUSTOMIZATION ===== */
+.donation_section .detail-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.donation_section .detail-box h2 {
+  margin-bottom: 1rem;
+  color: #0355cc;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.donation_section .detail-box p {
+  margin-bottom: 1.5rem;
+}
+
+.donation_section .detail-box button {
+  margin-top: 1rem;
+}
+
+/* ===== INFO SECTION ENHANCEMENTS ===== */
+.info_section .item:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+.info_section .item:hover .img-box {
+  background-color: #ff8a1d;
+  transition: all 0.3s ease;
+}
+
+.info_section .item:hover .img-box i {
+  color: white;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 992px) {
+  .contact_form_section {
+    padding: 80px 0;
+  }
+
+  .form_container {
+    padding: 40px 30px;
+  }
+
+  .contact_submit_btn {
+    padding: 14px 35px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact_form_section {
+    padding: 60px 0;
+  }
+
+  .form_container {
+    padding: 30px 20px;
+  }
+
+  .contact_submit_btn {
+    padding: 12px 30px;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact_form .form-control {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .contact_form .form-label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact_form_section {
+    padding: 50px 0;
+  }
+
+  .form_container {
+    padding: 25px 15px;
+  }
+
+  .contact_submit_btn {
+    padding: 10px 25px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .contact_form .form-control {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .contact_form .form-label {
+    font-size: 13px;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+.contact_form .form-control:focus {
+  outline: 2px solid #0355cc;
+  outline-offset: 2px;
+}
+
+/* ===== ANIMATION ENHANCEMENTS ===== */
+.form_container {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== PROFESSIONAL ENHANCEMENTS ===== */
+.contact_form_section .form-control::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Ripple effect for button */
+.contact_submit_btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.contact_submit_btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.contact_submit_btn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Enhanced focus states */
+.contact_form .form-control:focus {
+  transform: scale(1.02);
+}
+
+/* Success animation */
+@keyframes successPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.message.success {
+  animation: successPulse 0.6s ease-out;
+}

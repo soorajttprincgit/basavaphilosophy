@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap');
+
+/* ===== VOLUNTEERS PAGE SPECIFIC STYLES ===== */
+
+/* Base styling (matching index.html exactly) */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #040000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* Layout padding (matching index.html) */
+.layout_padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* Heading container (matching index.html) */
+.heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.heading_container h2 {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.heading_container p {
+  margin-bottom: 0;
+}
+
+.heading_container.heading_center {
+  align-items: center;
+  text-align: center;
+}
+
+/* ===== VOLUNTEER OPPORTUNITIES SECTION ===== */
+.volunteer_opportunities_section {
+  position: relative;
+  padding: 120px 0;
+  background: #ffffff;
+}
+
+.volunteer_opportunities_section .heading_container {
+  margin-bottom: 60px;
+  align-items: center;
+  text-align: center;
+}
+
+.volunteer_opportunities_section .heading_container h2 {
+  color: #0355cc;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.volunteer_opportunities_section .heading_container p {
+  color: #444;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/* Service boxes for volunteer opportunities (matching service section) */
+.volunteer_opportunities_section .box {
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.volunteer_opportunities_section .box:hover {
+  background-color: #ff8a1d;
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+
+.volunteer_opportunities_section .box .img-box {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  overflow: hidden;
+}
+
+.volunteer_opportunities_section .box .img-box img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.volunteer_opportunities_section .box:hover .img-box img {
+  filter: brightness(0) invert(1);
+}
+
+.volunteer_opportunities_section .box .detail-box {
+  margin-top: 15px;
+  padding: 25px 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer_opportunities_section .box .detail-box h5 {
+  font-weight: bold;
+  color: #040000;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.volunteer_opportunities_section .box:hover .detail-box h5 {
+  color: #ffffff;
+}
+
+.volunteer_opportunities_section .box .detail-box p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+  text-align: justify;
+}
+
+.volunteer_opportunities_section .box:hover .detail-box p {
+  color: #ffffff;
+}
+
+.volunteer_opportunities_section .box .detail-box a {
+  display: inline-block;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  background-color: #0355cc;
+  border: 1px solid #0355cc;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 12px;
+  transition: all 0.3s;
+  margin-top: auto;
+}
+
+.volunteer_opportunities_section .box .detail-box a:hover {
+  background-color: transparent;
+  color: #0355cc;
+}
+
+.volunteer_opportunities_section .box:hover .detail-box a {
+  background-color: #ffffff;
+  color: #ff8a1d;
+  border-color: #ffffff;
+}
+
+.volunteer_opportunities_section .box:hover .detail-box a:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* ===== VOLUNTEER FORM SECTION ===== */
+.volunteer_form_section {
+  padding: 120px 0;
+  background-color: #f8f9fa;
+}
+
+.volunteer_form_section .heading_container {
+  margin-bottom: 50px;
+}
+
+.volunteer_form_section .heading_container h2 {
+  color: #0355cc;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.volunteer_form_section .heading_container p {
+  color: #444;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.form_container {
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.volunteer_form .form-group {
+  margin-bottom: 25px;
+}
+
+.volunteer_form .form-label {
+  font-weight: 600;
+  color: #040000;
+  margin-bottom: 8px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.volunteer_form .form-control {
+  border: 2px solid #e9ecef;
+  border-radius: 5px;
+  padding: 12px 15px;
+  font-size: 14px;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+.volunteer_form .form-control:focus {
+  border-color: #0355cc;
+  box-shadow: 0 0 0 0.2rem rgba(3, 85, 204, 0.25);
+  outline: none;
+}
+
+.volunteer_form .form-control.is-valid {
+  border-color: #28a745;
+}
+
+.volunteer_form .form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.volunteer_form textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.volunteer_submit_btn {
+  background-color: #ff8a1d;
+  border: 2px solid #ff8a1d;
+  color: #ffffff;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+  font-family: 'Merriweather Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+.volunteer_submit_btn:hover {
+  background-color: transparent;
+  color: #ff8a1d;
+  border-color: #ff8a1d;
+}
+
+.volunteer_submit_btn:disabled {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Form validation messages */
+.invalid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #dc3545;
+}
+
+.valid-feedback {
+  display: block;
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #28a745;
+}
+
+/* Success message styling */
+.message {
+  display: none;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 992px) {
+  .volunteer_opportunities_section {
+    padding: 80px 0;
+  }
+
+  .volunteer_form_section {
+    padding: 80px 0;
+  }
+
+  .form_container {
+    padding: 40px 30px;
+  }
+
+  .volunteer_opportunities_section .box {
+    margin-bottom: 30px;
+  }
+
+  .volunteer_opportunities_section .box .img-box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteer_opportunities_section {
+    padding: 60px 0;
+  }
+
+  .volunteer_form_section {
+    padding: 60px 0;
+  }
+
+  .form_container {
+    padding: 30px 20px;
+  }
+
+  .volunteer_opportunities_section .box .img-box {
+    height: 180px;
+  }
+
+  .volunteer_opportunities_section .box .detail-box {
+    padding: 20px 12px;
+  }
+
+  .volunteer_opportunities_section .box .detail-box h5 {
+    font-size: 1rem;
+  }
+
+  .volunteer_opportunities_section .box .detail-box p {
+    font-size: 13px;
+  }
+
+  .volunteer_submit_btn {
+    padding: 12px 30px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .volunteer_opportunities_section {
+    padding: 50px 0;
+  }
+
+  .volunteer_form_section {
+    padding: 50px 0;
+  }
+
+  .form_container {
+    padding: 25px 15px;
+  }
+
+  .volunteer_opportunities_section .box .img-box {
+    height: 160px;
+  }
+
+  .volunteer_opportunities_section .box .detail-box h5 {
+    font-size: 0.95rem;
+  }
+
+  .volunteer_opportunities_section .box .detail-box p {
+    font-size: 12px;
+  }
+
+  .volunteer_form .form-control {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .volunteer_submit_btn {
+    padding: 10px 25px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .volunteer_form .form-label {
+    font-size: 13px;
+  }
+}
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+.volunteer_form .form-control:focus {
+  outline: 2px solid #0355cc;
+  outline-offset: 2px;
+}
+
+.volunteer_submit_btn:focus {
+  outline: 2px solid #ff8a1d;
+  outline-offset: 2px;
+}
+
+/* ===== ANIMATION ENHANCEMENTS ===== */
+.volunteer_opportunities_section .box {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form_container {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ===== LOADING STATES ===== */
+.loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid transparent;
+  border-top: 2px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

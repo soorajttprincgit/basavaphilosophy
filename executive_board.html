@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="Basava Philosophy, Executive Board, Leadership, Social Prosperity" />
+    <meta name="description" content="Meet the dedicated executive board members of Basava Philosophy Research Foundation who guide our mission of social prosperity through equality and empowerment." />
+    <meta name="author" content="Basava Philosophy Research Foundation" />
+
+    <title>BPRF - Executive Board</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/BPRF_img.png" type="image/x-icon" />
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <style>
+      /* Enhanced About Section Styling - same as index.html */
+      .about_section .detail-box h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #0355cc;
+        margin-bottom: 25px;
+        font-family: 'Merriweather Sans', sans-serif;
+      }
+
+      /* Reduced image size for about section */
+      .about_section .img-box img {
+        width: 80%; /* Reduced from 100% */
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        display: block;
+        margin: 0 auto; /* Center the image */
+      }
+
+      /* Leadership Team Card Sizing - Medium 400x400 */
+      .executive_board_section .box {
+        margin: 20px auto;
+        text-align: center;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        transition: all 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        max-width: 400px; /* Maximum width constraint */
+        min-height: 400px; /* Minimum height constraint */
+      }
+
+      .executive_board_section .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Member image container sizing */
+      .member_image_container {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 20px auto;
+        position: relative;
+        border: 3px solid #0355cc;
+      }
+
+      .member_image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+      }
+
+      .member_placeholder {
+        width: 100%;
+        height: 100%;
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+        color: #0355cc;
+      }
+
+      /* Member info section styling */
+      .member_info_section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+      }
+
+      .member_name {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #0355cc;
+        margin-bottom: 10px;
+      }
+
+      .member_position {
+        font-size: 0.9rem;
+        color: #ff8a1d;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 15px;
+      }
+
+      .member_motto {
+        font-style: italic;
+        color: #666;
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+
+      .member_bio_preview {
+        color: #444;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        flex: 1;
+        text-align: justify;
+      }
+
+      .view_details_btn {
+        background-color: #0355cc;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 4px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: all 0.3s;
+        margin-top: auto;
+      }
+
+      .view_details_btn:hover {
+        background-color: #ff8a1d;
+        transform: translateY(-2px);
+      }
+
+      /* Message styling */
+      .message {
+        display: none;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        border-radius: 5px;
+        z-index: 1000;
+      }
+
+      /* Modal styling for member bios */
+      .bio_modal .modal-content {
+        border-radius: 10px;
+      }
+
+      .bio_modal .modal-header {
+        background-color: #0355cc;
+        color: white;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .bio_modal .modal-body {
+        padding: 30px;
+      }
+
+      .bio_section {
+        margin-bottom: 25px;
+      }
+
+      .bio_section h5 {
+        color: #0355cc;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .bio_section p {
+        line-height: 1.6;
+        text-align: justify;
+        color: #444;
+      }
+
+      .highlight_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .highlight_item {
+        background-color: #f8f9fa;
+        padding: 10px 15px;
+        border-radius: 5px;
+        border-left: 3px solid #0355cc;
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .executive_board_section .box {
+          max-width: 350px;
+          min-height: 350px;
+          margin: 15px auto;
+        }
+
+        .member_image_container {
+          width: 100px;
+          height: 100px;
+        }
+
+        .member_name {
+          font-size: 1.2rem;
+        }
+
+        .member_bio_preview {
+          font-size: 0.85rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .executive_board_section .box {
+          max-width: 300px;
+          min-height: 320px;
+          padding: 15px;
+        }
+
+        .member_image_container {
+          width: 80px;
+          height: 80px;
+        }
+
+        .highlight_grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header_section.html (EXACT FROM INDEX) -->
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/new_logo.png" alt="Logo" style="height: 80px; margin-right: 0px;margin-left: 20px;">
+              <span class="d-none d-sm-inline">Basava Philosophy Research Foundation</span>
+              <span class="d-inline d-sm-none">BPRF</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="our_units.html">Our Units</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Boards
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="executive_board.html"
+                      >
+                        Executive Board
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="advisory_board1.html"
+                      >
+                        Advisory Board
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="volunteers.html">Volunteers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact_professional.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- slider section (SAME STRUCTURE AS INDEX) -->
+    <section class="slider_section">
+      <div class="container">
+        <div class="row">
+          <!-- Static Image -->
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/cr1SylA.jpg" alt="Executive Board Leadership" />
+            </div>
+          </div>
+          <!-- Carousel Text Content -->
+          <div class="col-md-6">
+            <div id="boardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="detail-box">
+                    <h1>Executive Board Leadership</h1>
+                    <p>
+                      Meet the visionary leaders guiding our mission to promote social prosperity through Basava's timeless principles of equality, education, and empowerment.
+                    </p>
+                    <a href="#about">Learn More</a>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="detail-box">
+                    <h1>Dedicated to Excellence</h1>
+                    <p>
+                      Our executive board brings together diverse expertise in technology, social justice, and community leadership to advance our foundation's mission.
+                    </p>
+                    <a href="#services">Meet Our Team</a>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="detail-box">
+                    <h1>Leading Social Change</h1>
+                    <p>
+                      Through strategic guidance and passionate commitment, our board members drive initiatives that create lasting impact in communities across the USA.
+                    </p>
+                    <a href="contact.html">Contact Leadership</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#boardCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#boardCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br>
+    <!-- end slider section -->
+
+    <!-- about section (SAME STRUCTURE AS INDEX) -->
+    <section class="about_section layout_padding-bottom" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <div class="detail-box">
+              <h2>Board of Visionaries in Service</h2>
+              <p>
+                <strong>Visionary Leadership:</strong> Our executive board combines decades of experience in technology, social justice, and community engagement to guide the Foundation's mission of promoting equality and social prosperity through Basava's principles.
+              </p>
+              <p>
+                <strong>Strategic Guidance:</strong> With expertise spanning AI technology, women's empowerment, and organizational leadership, our board provides strategic direction for research initiatives and community outreach programs.
+              </p>
+              <p>
+                <strong>Commitment to Change:</strong> Each board member brings a unique perspective and unwavering dedication to creating positive social impact through education, research, and community building.
+              </p>
+              <a href="contact.html" onclick="showMessage(event)">
+                Contact Leadership
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <div class="img-box">
+              <img src="images/l.jpg" alt="Board Leadership" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- service section (EXECUTIVE BOARD MEMBERS) -->
+    <section class="service_section layout_padding executive_board_section" id="services">
+      <div class="service_container">
+        <div class="container">
+          <div class="heading_container heading_center">
+            <h2>Our Leadership Team</h2>
+            <p>Dedicated professionals committed to advancing social prosperity and equality through research, education, and community engagement.</p>
+          </div>
+          <div class="row justify-content-center">
+            <!-- Savitha (Savi) -->
+            <div class="col-lg-5 col-md-8 col-sm-10">
+              <div class="box">
+                <div class="member_image_container">
+                  <img src="images/savitha.png" alt="Savitha" class="member_image">
+                  <div class="member_placeholder">
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="member_info_section">
+                  <h3 class="member_name">Savitha</h3>
+                  <div class="member_position">Executive Board Member</div>
+                  <div class="member_motto">"Breaking the PACE: Challenging Norms, Leading Change."</div>
+                  <div class="member_bio_preview">
+                    Leader in technology and social justice, recognized by YWCA Bucks County PA for her contributions to racial and social justice initiatives.
+                  </div>
+                  <button class="view_details_btn" data-bs-toggle="modal" data-bs-target="#savithaModal">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dan -->
+            <div class="col-lg-5 col-md-8 col-sm-10">
+              <div class="box">
+                <div class="member_image_container">
+                  <img src="images/dan.jpg" alt="Dan" class="member_image">
+                  <div class="member_placeholder">
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="member_info_section">
+                  <h3 class="member_name">Dan</h3>
+                  <div class="member_position">Technology & AI Advisory</div>
+                  <div class="member_motto">"Solving problems independently and imagining the future of AI for good."</div>
+                  <div class="member_bio_preview">
+                    Technology veteran with 45+ years experience, specializing in AI and machine learning. Expert in developing solutions for social good.
+                  </div>
+                  <button class="view_details_btn" data-bs-toggle="modal" data-bs-target="#danModal">
+                    Read More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end service section -->
+
+    <!-- Donation Modal -->
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="donationModalLabel">Donation Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="donation_form_handler.php" method="post" id="donationForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+              <div class="mb-3">
+                <label for="amount" class="form-label">Donation Amount</label>
+                <input type="number" class="form-control" id="amount" name="amount" required>
+              </div>
+              <div class="mb-3">
+                <label for="currency" class="form-label">Currency</label>
+                <select class="form-control" id="currency" name="currency" required>
+                  <option value="USD">USD</option>
+                  <option value="INR">INR</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="CNY">CNY</option>
+                  <option value="AUD">AUD</option>
+                  <option value="CAD">CAD</option>
+                  <option value="CHF">CHF</option>
+                  <option value="NZD">NZD</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="message" id="donationStatusMessage"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Savitha Modal -->
+    <div class="modal fade bio_modal" id="savithaModal" tabindex="-1" aria-labelledby="savithaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="savithaModalLabel">Savitha (Savi) - Biography</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="bio_section">
+              <h5>Leadership Philosophy</h5>
+              <p>To Savitha (Savi), "Breaking the PACE" means breaking free from expectations to set her rhythm, challenging norms, and taking proactive steps to drive positive change in her community. As a people leader, Savitha thrives in an environment where she can push boundaries, including being on the Women in Technology panel, Stem Next, LAA, and other influential platforms.</p>
+            </div>
+
+            <div class="bio_section">
+              <h5>Educational Background</h5>
+              <p>Raised in India, Savi brings a rich educational background with a Master's Degree in Science (India), Computer Network Technology (California), and an MBA in Executive Management (JWMI Washington D.C.). Her diverse academic foundation reflects her commitment to continuous learning and excellence.</p>
+            </div>
+
+            <div class="bio_section">
+              <h5>Recognition & Awards</h5>
+              <p>In October 2024, Savitha received a prestigious award from YWCA Bucks County PA in their 33rd Salute to Women who make a difference, specifically in the "Racial and Social Justice" category, recognizing her significant contributions to creating positive social change.</p>
+            </div>
+
+            <div class="highlight_grid">
+              <h5>Key Contributions & Interests</h5>
+              <div class="highlight_item">Women in Technology Panel Participant</div>
+              <div class="highlight_item">Active in Stem Next and LAA initiatives</div>
+              <div class="highlight_item">Leading meditation and consciousness facilitation sessions</div>
+              <div class="highlight_item">Passionate about traveling, fashion, and gardening</div>
+              <div class="highlight_item">Advocate for access consciousness and personal development</div>
+              <div class="highlight_item">Believes in "Work is Worship" philosophy</div>
+              <div class="highlight_item">Lives by the motto: "Let life flow into me with ease, joy, and glory"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dan Modal -->
+    <div class="modal fade bio_modal" id="danModal" tabindex="-1" aria-labelledby="danModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="danModalLabel">Dan - Biography</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="bio_section">
+              <h5>Professional Experience</h5>
+              <p>Dan has worked in technology for over 45 years, with a focus on AI and machine learning for the past decade. He currently applies LLMs and advanced data science tools in a production setting, helping his organization explore the growing potential of artificial intelligence. His daily work centers around concept development, prompt engineering, and Python-based experimentation.</p>
+            </div>
+
+            <div class="bio_section">
+              <h5>Journey & Philosophy</h5>
+              <p>A lifelong learner, Dan is proud of his ability to keep pace with a fast-changing field — whether it's implementing new AI techniques at work or experimenting with cutting-edge models at home. His technical journey began in high school in 1974, where he first encountered computers and instantly saw their sci-fi promise. That early spark led him through roles in academia and telecommunications, always with a strong self-driven approach to learning and discovery.</p>
+            </div>
+
+            <div class="bio_section">
+              <h5>Community Impact</h5>
+              <p>Beyond his professional achievements, Dan informally mentors others and occasionally leads data science workshops. His passion lies in solving problems independently and imagining the future of AI — including the emergence of artificial superintelligence as a force for good.</p>
+            </div>
+
+            <div class="highlight_grid">
+              <h5>Expertise & Interests</h5>
+              <div class="highlight_item">45+ years in technology, 10+ years focused on AI/ML</div>
+              <div class="highlight_item">Expert in LLMs, Python development, and prompt engineering</div>
+              <div class="highlight_item">Experience in academia and telecommunications</div>
+              <div class="highlight_item">Data science mentor and workshop leader</div>
+              <div class="highlight_item">Passionate about water gardening and bonsai cultivation</div>
+              <div class="highlight_item">Practices tai chi and weightlifting</div>
+              <div class="highlight_item">Plays Native American flute</div>
+              <div class="highlight_item">Former clown troupe member and cycling team manager</div>
+              <div class="highlight_item">Contributed to diabetes research fundraising efforts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info section (EXACT FROM INDEX) -->
+    <section class="info_section">
+      <div class="container">
+        <h4>Get In Touch</h4>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="info_items">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </div>
+                      <p>416 Mystic Ln, Pittsburg, CA, USA</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </div>
+                      <p>+1 415 233 2408</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
+                      <p>info@basavaphilosophy.com</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-box">
+        <h4>Follow Us</h4>
+        <div class="box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/basavaphil70735">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCUJruMbSZHJhyqOXCf0JQhA">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/basavaphilosophy/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+        <h6>EIN # 33-4931428</h6>
+      </div>
+    </section>
+    <!-- end info section -->
+
+    <!-- footer_section.html (EXACT FROM INDEX) -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayDateYear"></span> | BasavaPhilosophy All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+
+    <script>
+      // Set current year in copyright
+      document.getElementById('displayDateYear').innerHTML = new Date().getFullYear();
+
+      $(document).ready(function() {
+        // Handle member images
+        const images = document.querySelectorAll('.member_image');
+
+        images.forEach(function(img) {
+          img.onload = function() {
+            this.style.display = 'block';
+            const placeholder = this.parentNode.querySelector('.member_placeholder');
+            if (placeholder) {
+              placeholder.style.display = 'none';
+            }
+          };
+
+          img.onerror = function() {
+            this.style.display = 'none';
+            const placeholder = this.parentNode.querySelector('.member_placeholder');
+            if (placeholder) {
+              placeholder.style.display = 'flex';
+            }
+          };
+
+          // Force check if image is already loaded
+          if (img.complete) {
+            if (img.naturalWidth === 0) {
+              img.onerror();
+            } else {
+              img.onload();
+            }
+          }
+        });
+
+        $('#donationForm').on('submit', function(event) {
+          event.preventDefault();
+          var formData = $(this).serialize();
+          $.ajax({
+            type: 'POST',
+            url: 'donation_form_handler.php',
+            data: formData,
+            success: function(response) {
+              $('#donationStatusMessage').text('Thank you for your generous donation! ' + response).fadeIn();
+              $('#donationForm')[0].reset();
+            },
+            error: function(xhr, status, error) {
+              $('#donationStatusMessage').text('There was an error processing your donation. Please try again.').fadeIn();
+            }
+          });
+        });
+      });
+
+      function showMessage(event) {
+        event.preventDefault(); // Prevent the link from navigating
+        alert("This page is under construction.");
+      }
+    </script>
+  </body>
+</html>

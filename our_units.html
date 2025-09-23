@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="Basava Philosophy, Research Units, Education, Social Prosperity" />
+    <meta name="description" content="Explore the various research and educational units of Basava Philosophy Research Foundation working towards social prosperity through equality and empowerment." />
+    <meta name="author" content="Basava Philosophy Research Foundation" />
+
+    <title>Our Units - BPRF</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/BPRF_img.png" type="image/x-icon" />
+
+    <!-- slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- font awesome style -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Our Units specific styles -->
+    <link href="css/our_units.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Bundle JS (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <style>
+      /* Custom styles for img-box */
+      .img-box img {
+        width: 100%; /* Ensure the image takes the full width of the container */
+        height: auto; /* Maintain the aspect ratio */
+        object-fit: cover; /* Ensure the image covers the entire area */
+      }
+
+      /* Enhanced image visibility for service boxes - WIDER IMAGES */
+      .service_section .box .img-box {
+        height: 220px; /* Increased height for better visibility */
+        width: 100%; /* Full width */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+        margin-bottom: 15px; /* Space between image and content */
+      }
+
+      .service_section .box .img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .service_section .box:hover .img-box img {
+        transform: scale(1.05);
+      }
+
+      /* Make service boxes more spacious */
+      .service_section .box {
+        margin-bottom: 40px;
+        padding: 15px;
+      }
+
+      /* PROFESSIONAL BUTTON STYLING */
+      .unit_learn_more_btn {
+        background-color: #0355cc;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-family: 'Merriweather Sans', sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        min-width: 120px;
+      }
+
+      .unit_learn_more_btn:hover {
+        background-color: #ff8a1d;
+        color: white;
+        text-decoration: none;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      .unit_learn_more_btn:focus {
+        outline: 2px solid #0355cc;
+        outline-offset: 2px;
+      }
+
+      /* Special styling for Kaayaka button */
+      .unit_kaayaka_btn {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        font-family: 'Merriweather Sans', sans-serif;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        min-width: 120px;
+      }
+
+      .unit_kaayaka_btn:hover {
+        background-color: #218838;
+        color: white;
+        text-decoration: none;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+
+      .unit_kaayaka_btn:focus {
+        outline: 2px solid #28a745;
+        outline-offset: 2px;
+      }
+
+      /* Custom styles for donation section */
+      .donation_section .detail-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .donation_section .detail-box h2 {
+        margin-bottom: 1rem;
+      }
+
+      .donation_section .detail-box p {
+        margin-bottom: 1.5rem;
+      }
+
+      .donation_section .detail-box button {
+        margin-top: 1rem;
+      }
+
+      .message {
+        display: none;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        border-radius: 5px;
+        z-index: 1000;
+      }
+
+      /* Kaayaka Initiatives Section - CLEAN WHITE BACKGROUND */
+      .kaayaka_section {
+        background: #ffffff; /* Clean white background */
+        padding: 80px 0;
+        border-top: 1px solid #e9ecef;
+        border-bottom: 1px solid #e9ecef;
+      }
+
+      .kaayaka_section h2 {
+        color: #0355cc; /* Blue heading */
+        margin-bottom: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .kaayaka_section .heading_container p {
+        color: #444; /* Dark gray subtitle */
+        font-size: 16px;
+        margin-bottom: 50px;
+      }
+
+      .kaayaka_card {
+        background: #ffffff; /* White card background */
+        border-radius: 5px; /* Simple rounded corners */
+        padding: 30px;
+        margin-bottom: 30px;
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef; /* Light border */
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle shadow */
+      }
+
+      .kaayaka_card:hover {
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15); /* Enhanced shadow on hover */
+        transform: translateY(-3px);
+      }
+
+      .kaayaka_card h4 {
+        color: #0355cc; /* Blue heading */
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: 'Merriweather Sans', sans-serif;
+        text-transform: uppercase;
+      }
+
+      .kaayaka_card p {
+        color: #444; /* Dark gray text */
+        line-height: 1.6;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+
+      .kaayaka_btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background: #0355cc; /* Blue button */
+        color: white;
+        text-decoration: none;
+        border-radius: 3px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        border: 2px solid #0355cc;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 12px;
+      }
+
+      .kaayaka_btn:hover {
+        background: transparent;
+        color: #0355cc;
+        text-decoration: none;
+      }
+
+      .kaayaka_features {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+
+      .kaayaka_features li {
+        padding: 8px 0;
+        position: relative;
+        padding-left: 20px;
+        color: #444; /* Dark gray text */
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .kaayaka_features li:before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #0355cc; /* Blue bullet points */
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .kaayaka_section .foundation_note {
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background: #f8f9fa; /* Light gray background for note */
+        border-radius: 5px;
+      }
+
+      .kaayaka_section .foundation_note h4 {
+        color: #0355cc;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      .kaayaka_section .foundation_note p {
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- header_section.html (EXACT FROM INDEX) -->
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/new_logo.png" alt="Logo" style="height: 80px; margin-right: 0px;margin-left: 20px;">
+              <span class="d-none d-sm-inline">Basava Philosophy Research Foundation</span>
+              <span class="d-inline d-sm-none">BPRF</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="our_units.html">Our Units</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Boards
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="executive_board.html"
+                      >
+                        Executive Board
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="advisory_board.html"
+                      >
+                        Advisory Board
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="volunteers.html">Volunteers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact_professional.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- slider section (SAME STRUCTURE AS INDEX) -->
+    <section class="slider_section">
+      <div class="container">
+        <div class="row">
+          <!-- Static Image -->
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/hq720.jpg" alt="Our Research Units" />
+            </div>
+          </div>
+          <!-- Carousel Text Content -->
+          <div class="col-md-6">
+            <div id="unitsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="detail-box">
+                    <h1>Our Research & Educational Units</h1>
+                    <p>
+                      Specialized divisions working to advance Basava's principles of equality, education, and social prosperity through scientific research and community engagement.
+                    </p>
+                    <a href="#services">Learn More</a>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div class="detail-box">
+                    <h1>Educational Research Unit</h1>
+                    <p>
+                      Develops innovative educational programs based on Basava's principles, focusing on inclusive learning methodologies and bias-free curriculum development.
+                    </p>
+                    <a href="#services">Explore Units</a>
+                  </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                  <div class="detail-box">
+                    <h1>Kaayaka Development Unit</h1>
+                    <p>
+                      Creating sustainable employment opportunities through AI Mantapa learning groups and job placement services across the USA.
+                    </p>
+                    <a href="#kaayaka">Visit Kaayaka Initiatives</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Navigation Controls -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#unitsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#unitsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br><br>
+    <!-- end slider section -->
+
+    <!-- service section (PROFESSIONAL BUTTONS) -->
+    <section class="service_section layout_padding" id="services">
+      <div class="service_container">
+        <div class="container">
+          <div class="heading_container heading_center">
+            <h2>Our Specialized Research Units</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/education_research.webp" alt="Educational Research Unit" />
+                </div>
+                <div class="detail-box">
+                  <h5>Educational Research Unit</h5>
+                  <p>
+                    Develops innovative educational programs based on Basava's principles, focusing on inclusive learning methodologies and bias-free curriculum development.
+                  </p>
+                  <button class="unit_learn_more_btn" onclick="showMessage(event)">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/social_science_research.jpeg" alt="Social Science Research Unit" />
+                </div>
+                <div class="detail-box">
+                  <h5>Social Science Research Unit</h5>
+                  <p>
+                    Conducts scientific research on social bias reduction, equality promotion, and the practical application of Basava's philosophy in contemporary society.
+                  </p>
+                  <button class="unit_learn_more_btn" onclick="showMessage(event)">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/community_engagement.jpeg" alt="Community Engagement Unit" />
+                </div>
+                <div class="detail-box">
+                  <h5>Community Engagement Unit</h5>
+                  <p>
+                    Builds and nurtures Basava Balaga communities, organizing events, workshops, and cultural programs to spread awareness of Basava's teachings.
+                  </p>
+                  <button class="unit_learn_more_btn" onclick="showMessage(event)">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/kayaka_development.jpeg" alt="Kayaka Development Unit" />
+                </div>
+                <div class="detail-box">
+                  <h5>Kayaka (Work) Development Unit</h5>
+                  <p>
+                    Focuses on creating sustainable employment opportunities and skill development programs based on Basava's concept of meaningful work (Kayaka).
+                  </p>
+                  <a href="#kaayaka" class="unit_kaayaka_btn">
+                    Explore Kaayaka
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/Para.jpg" alt="Dasoha Service Unit" />
+                </div>
+                <div class="detail-box">
+                  <h5>Dasoha (Service) Unit</h5>
+                  <p>
+                    Implements Basava's principle of Dasoha through food security programs, knowledge sharing initiatives, and community service projects.
+                  </p>
+                  <button class="unit_learn_more_btn" onclick="showMessage(event)">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/women_empowerment.jpg" alt="Women Empowerment Unit" />
+                </div>
+                <div class="detail-box">
+                  <h5>Women Empowerment Unit</h5>
+                  <p>
+                    Dedicated to advancing women's rights and empowerment through education, leadership development, and advocacy programs.
+                  </p>
+                  <button class="unit_learn_more_btn" onclick="showMessage(event)">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end service section -->
+
+    <!-- Kaayaka Initiatives Section (CLEAN WHITE BACKGROUND) -->
+    <section class="kaayaka_section layout_padding" id="kaayaka">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="heading_container heading_center">
+              <h2>Kaayaka Initiatives</h2>
+              <p>Empowering communities through AI learning and job opportunities across the USA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="kaayaka_card">
+              <h4>Kaayaka AI Mantapa</h4>
+              <p>
+                A self-help, mutual support learning group for AI enthusiasts across the USA. Join our community of learners where you can exchange knowledge, ask questions, and grow together in the field of Artificial Intelligence.
+              </p>
+              <ul class="kaayaka_features">
+                <li>AI Learning Community</li>
+                <li>Expert Moderators (AI Sharanas)</li>
+                <li>Knowledge Sharing Platform</li>
+                <li>Collaborative Learning Environment</li>
+                <li>Open to All USA Residents</li>
+              </ul>
+              <a href="kaayaka_ai_mantapa.html" class="kaayaka_btn">Join AI Mantapa</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="kaayaka_card">
+              <h4>Kaayaka Jobs Portal</h4>
+              <p>
+                Connecting tech professionals with opportunities across the USA. Our job portal focuses on IT, AI, Tech, and Professional positions while fostering a community-driven approach to career advancement.
+              </p>
+              <ul class="kaayaka_features">
+                <li>IT & Tech Job Opportunities</li>
+                <li>Referral Network System</li>
+                <li>Direct Employer Connections</li>
+                <li>Career Development Resources</li>
+                <li>Community Support Network</li>
+              </ul>
+              <a href="kaayaka_jobs.html" class="kaayaka_btn">Explore Jobs</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="foundation_note">
+              <h4>Part of Basava Philosophy Research Foundation</h4>
+              <p>
+                Both initiatives are managed as part of our California registered non-profit organization, dedicated to creating meaningful work opportunities (Kayaka) and fostering educational communities that advance social prosperity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end kaayaka section -->
+
+    <!-- donation section (SAME STRUCTURE AS INDEX) -->
+    <section class="donation_section layout_padding-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-6">
+            <div class="img-box">
+              <img src="images/download.jpeg" alt="Support Our Research" style="width: 100%; height: auto;" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6 d-flex align-items-center">
+            <div class="detail-box text-center">
+              <h2>Support Our Research Units</h2>
+              <p>Your generous donation helps us continue our mission to advance Basava's principles through scientific research and educational programs. Every contribution supports our specialized units.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#donationModal">
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end donation section -->
+
+    <!-- Modal (SAME STRUCTURE AS INDEX) -->
+    <div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="donationModalLabel">Support Our Research Units</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="donation_form_handler.php" method="post" id="donationForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+              <div class="mb-3">
+                <label for="unit_preference" class="form-label">Preferred Research Unit to Support</label>
+                <select class="form-control" id="unit_preference" name="unit_preference">
+                  <option value="general">General Foundation Support</option>
+                  <option value="education">Educational Research Unit</option>
+                  <option value="social_science">Social Science Research Unit</option>
+                  <option value="community">Community Engagement Unit</option>
+                  <option value="kayaka">Kaayaka Development Unit</option>
+                  <option value="dasoha">Dasoha Service Unit</option>
+                  <option value="women">Women Empowerment Unit</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="amount" class="form-label">Donation Amount</label>
+                <input type="number" class="form-control" id="amount" name="amount" required>
+              </div>
+              <div class="mb-3">
+                <label for="currency" class="form-label">Currency</label>
+                <select class="form-control" id="currency" name="currency" required>
+                  <option value="USD">USD</option>
+                  <option value="INR">INR</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="JPY">JPY</option>
+                  <option value="CNY">CNY</option>
+                  <option value="AUD">AUD</option>
+                  <option value="CAD">CAD</option>
+                  <option value="CHF">CHF</option>
+                  <option value="NZD">NZD</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <!-- Message div placed right after the submit button -->
+              <div class="message" id="donationStatusMessage"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info section (EXACT FROM INDEX) -->
+    <section class="info_section">
+      <div class="container">
+        <h4>Get In Touch</h4>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="info_items">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      </div>
+                      <p>416 Mystic Ln, Pittsburg, CA, USA</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                      </div>
+                      <p>+1 415 233 2408</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="">
+                    <div class="item">
+                      <div class="img-box">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </div>
+                      <p>info@basavaphilosophy.com</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-box">
+        <h4>Follow Us</h4>
+        <div class="box">
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="https://x.com/basavaphil70735">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.youtube.com/channel/UCUJruMbSZHJhyqOXCf0JQhA">
+            <i class="fa fa-youtube" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/basavaphilosophy/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+        <h6>EIN # 33-4931428</h6>
+      </div>
+    </section>
+    <!-- end info section -->
+
+    <!-- footer_section.html (EXACT FROM INDEX) -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayDateYear"></span> | BasavaPhilosophy All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+
+    <!-- Our Units specific JavaScript -->
+    <script src="js/our_units.js"></script>
+  </body>
+</html>
